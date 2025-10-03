@@ -9,10 +9,3 @@ void configDevice() {
   #endif
     while(1) delay(1000);
 }
-
-void setup() {
-  configDevice();
-}
-
-void loop() {
-}
