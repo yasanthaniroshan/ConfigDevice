@@ -1,18 +1,18 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+void configDevice() {
+  uint64_t chipid = ESP.getEfuseMac(); 
+  char idStr[17];
+  sprintf(idStr, "%016llX", chipid); 
+  #if defined(DEVICE_ID)
+    while (!String(idStr).equals(DEVICE_ID)) delay(1000);
+  #endif
+    while(1) delay(1000);
+}
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  configDevice();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
 }
