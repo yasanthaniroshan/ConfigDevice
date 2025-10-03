@@ -1,4 +1,4 @@
-#include <Arduino.h>
+#include <ConfigDevice.h>
 
 void configDevice() {
   uint64_t chipid = ESP.getEfuseMac(); 
