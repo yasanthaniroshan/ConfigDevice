@@ -1,0 +1,16 @@
+{
+    "name": "ConfigDevice",
+    "keywords": "esp32,validation,config,device",
+    "description": "A client library for device configuration and validation. This library provides a set of tools to manage device settings and ensure they are valid before use.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yasanthaniroshan/ConfigDevice.git"
+    },
+    "version": "1.0",
+    "exclude": "tests",
+    "examples": "examples/*/*.ino",
+    "frameworks": "arduino",
+    "platforms": [
+        "espressif32"
+    ]
+}
